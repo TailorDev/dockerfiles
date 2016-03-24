@@ -15,4 +15,4 @@ VOLUME ["/app"]
 
 EXPOSE 3030
 
-CMD ["dashing", "start"]
+CMD ["bundle", "exec", "dashing", "start"]
