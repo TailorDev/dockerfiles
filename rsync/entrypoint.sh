@@ -5,6 +5,7 @@ eval $(ssh-agent -s)
 
 # add ssh key stored in SSH_PRIVATE_KEY variable to the agent store
 echo "$SSH_PRIVATE_KEY" > ssh_private_key
+chmod 600 ssh_private_key
 ssh-add ssh_private_key
 rm ssh_private_key
 
