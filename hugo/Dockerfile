@@ -3,7 +3,8 @@ MAINTAINER TailorDev <hello@tailordev.fr>
 
 # Install pygments (for syntax highlighting) 
 RUN apt-get -qq update \
-	&& DEBIAN_FRONTEND=noninteractive apt-get -qq install -y --no-install-recommends python-pygments git ca-certificates curl rlwrap \
+	&& DEBIAN_FRONTEND=noninteractive apt-get -qq install -y --no-install-recommends \
+	python-pygments git ca-certificates curl rlwrap build-essential \
 	&& rm -rf /var/lib/apt/lists/*
 
 # Node.js
