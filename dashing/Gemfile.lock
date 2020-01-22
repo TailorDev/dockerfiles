@@ -71,7 +71,7 @@ GEM
       json
       websocket (~> 1.0)
     rack (1.5.5)
-    rack-protection (1.5.3)
+    rack-protection (1.5.5)
       rack
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
